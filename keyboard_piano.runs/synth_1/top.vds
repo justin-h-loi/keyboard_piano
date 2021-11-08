@@ -1,0 +1,426 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Jun  8 13:54:27 2021
+# Process ID: 10896
+# Current directory: D:/Education/Vivado Projects/keyboard_piano/keyboard_piano.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/Education/Vivado Projects/keyboard_piano/keyboard_piano.runs/synth_1/top.vds
+# Journal file: D:/Education/Vivado Projects/keyboard_piano/keyboard_piano.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7052 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 853.363 ; gain = 234.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/keyboard.v:44]
+	Parameter BREAK bound to: 8'b11110000 
+	Parameter lowercase bound to: 3'b000 
+	Parameter ignore_break bound to: 3'b001 
+INFO: [Synth 8-6157] synthesizing module 'ps2_rx' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/ps2_rx.v:1]
+	Parameter idle bound to: 1'b0 
+	Parameter rx bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'ps2_rx' (1#1) [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/ps2_rx.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/keyboard.v:92]
+WARNING: [Synth 8-3848] Net state_reg in module/entity keyboard does not have driver. [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/keyboard.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (2#1) [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/keyboard.v:44]
+INFO: [Synth 8-6157] synthesizing module 'keyboard_to_piano' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/keyboard_to_piano.v:23]
+	Parameter C3 bound to: 6'b000000 
+	Parameter CS3 bound to: 6'b000001 
+	Parameter D3 bound to: 6'b000010 
+	Parameter DS3 bound to: 6'b000011 
+	Parameter E3 bound to: 6'b000100 
+	Parameter F3 bound to: 6'b000101 
+	Parameter G3 bound to: 6'b000110 
+	Parameter GS3 bound to: 6'b000111 
+	Parameter A3 bound to: 6'b001000 
+	Parameter AS3 bound to: 6'b001001 
+	Parameter B3 bound to: 6'b001010 
+	Parameter C4 bound to: 6'b001011 
+	Parameter CS4 bound to: 6'b001100 
+	Parameter D4 bound to: 6'b001101 
+	Parameter DS4 bound to: 6'b001110 
+	Parameter E4 bound to: 6'b001111 
+	Parameter F4 bound to: 6'b010000 
+	Parameter FS4 bound to: 6'b010001 
+	Parameter G4 bound to: 6'b010010 
+	Parameter GS4 bound to: 6'b010011 
+	Parameter A4 bound to: 6'b010100 
+	Parameter AS4 bound to: 6'b010101 
+	Parameter B4 bound to: 6'b010110 
+	Parameter C5 bound to: 6'b010111 
+	Parameter CS5 bound to: 6'b011000 
+	Parameter D5 bound to: 6'b011001 
+	Parameter DS5 bound to: 6'b011010 
+	Parameter E5 bound to: 6'b011011 
+	Parameter F5 bound to: 6'b011100 
+	Parameter FS5 bound to: 6'b011101 
+	Parameter G5 bound to: 6'b011110 
+	Parameter GS5 bound to: 6'b011111 
+	Parameter A5 bound to: 6'b100000 
+	Parameter AS5 bound to: 6'b100001 
+	Parameter B5 bound to: 6'b100010 
+	Parameter FS3 bound to: 6'b100011 
+	Parameter STOP bound to: 6'b111111 
+INFO: [Synth 8-6155] done synthesizing module 'keyboard_to_piano' (3#1) [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/keyboard_to_piano.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_control' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/display_control.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/display_control.v:35]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/display_control.v:102]
+INFO: [Synth 8-6155] done synthesizing module 'display_control' (4#1) [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/display_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'speaker_control' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/speaker_control.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/speaker_control.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'speaker_control' (5#1) [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/speaker_control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (6#1) [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 926.145 ; gain = 307.348
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 926.145 ; gain = 307.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 926.145 ; gain = 307.348
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 926.145 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Nexys.xdc]
+Finished Parsing XDC File [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Nexys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Nexys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1010.785 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1010.785 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1010.785 ; gain = 391.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1010.785 ; gain = 391.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1010.785 ; gain = 391.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "seg" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'note_reg' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/keyboard_to_piano.v:71]
+WARNING: [Synth 8-327] inferring latch for variable 'seg_reg' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/display_control.v:103]
+WARNING: [Synth 8-327] inferring latch for variable 'LED_BCD_reg' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/display_control.v:90]
+WARNING: [Synth 8-327] inferring latch for variable 'octave_reg' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/display_control.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'symbol_reg' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/display_control.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'music_note_reg' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/display_control.v:36]
+WARNING: [Synth 8-327] inferring latch for variable 'value_reg' [D:/Education/Vivado Projects/keyboard_piano/Code and Files/Verilog Files/speaker_control.v:44]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1010.785 ; gain = 391.988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	  14 Input      7 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	  38 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	  14 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	  38 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ps2_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module keyboard 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module display_control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	  14 Input      7 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	  38 Input      5 Bit        Muxes := 2     
+	  14 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	  38 Input      1 Bit        Muxes := 1     
+Module speaker_control 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  38 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design top has port AN[7] driven by constant 1
+WARNING: [Synth 8-3917] design top has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design top has port AN[5] driven by constant 1
+WARNING: [Synth 8-3917] design top has port AN[4] driven by constant 1
+WARNING: [Synth 8-3917] design top has port AN[1] driven by constant 1
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pianodc/symbol_reg[4] )
+INFO: [Synth 8-3886] merging instance 'pianodc/octave_reg[3]' (LD) to 'pianodc/symbol_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pianodc/symbol_reg[3]' (LD) to 'pianodc/symbol_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pianodc/symbol_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (pianodc/symbol_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (pianodc/symbol_reg[2]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1010.785 ; gain = 391.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+--------------------+---------------+----------------+
+|Module Name       | RTL Object         | Depth x Width | Implemented As | 
++------------------+--------------------+---------------+----------------+
+|keyboard_to_piano | note               | 256x6         | LUT            | 
+|display_control   | music_note         | 64x5          | LUT            | 
+|speaker_control   | value              | 64x19         | LUT            | 
+|top               | ktp/note           | 256x6         | LUT            | 
+|top               | pianodc/music_note | 64x5          | LUT            | 
+|top               | pianosc/value      | 64x19         | LUT            | 
++------------------+--------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1010.785 ; gain = 391.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1026.434 ; gain = 407.637
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1026.434 ; gain = 407.637
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1034.008 ; gain = 415.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1034.008 ; gain = 415.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1034.008 ; gain = 415.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1034.008 ; gain = 415.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1034.008 ; gain = 415.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1034.008 ; gain = 415.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    10|
+|3     |LUT1   |     1|
+|4     |LUT2   |    12|
+|5     |LUT3   |     9|
+|6     |LUT4   |    16|
+|7     |LUT5   |    16|
+|8     |LUT6   |    82|
+|9     |FDCE   |    24|
+|10    |FDRE   |    40|
+|11    |LD     |    48|
+|12    |IBUF   |     4|
+|13    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+------------------+------+
+|      |Instance        |Module            |Cells |
++------+----------------+------------------+------+
+|1     |top             |                  |   279|
+|2     |  kb            |keyboard          |    36|
+|3     |    ps2_rx_unit |ps2_rx            |    36|
+|4     |  ktp           |keyboard_to_piano |    49|
+|5     |  pianodc       |display_control   |    72|
+|6     |  pianosc       |speaker_control   |   101|
++------+----------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1034.008 ; gain = 415.211
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1034.008 ; gain = 330.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1034.008 ; gain = 415.211
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1044.332 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1048.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  LD => LDCE: 48 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 15 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1048.438 ; gain = 741.242
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1048.438 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Education/Vivado Projects/keyboard_piano/keyboard_piano.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  8 13:55:10 2021...
